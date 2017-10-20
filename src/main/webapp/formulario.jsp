@@ -77,7 +77,7 @@
            </tr>
            <tr>
               <td width="164" bgcolor=""><span class="Estilo21">RUT</span> </td>
-              <td><input class="medium bold validateRut required errorSim" type="text"  name="rut" maxlength="13"onclick="activa(this.value)">  
+              <td><input class="medium bold validateRut required errorSim" type="text"  name="rut" maxlength="10"onclick="activa(this.value)">  
                   <em>Ej: 12851195-2</em></td>    
            </tr>
            <tr>
@@ -86,13 +86,13 @@
                            <em>Monto entre 500.000 y 100.000.000</em></td>
            </tr>
      <tr>
-        <td>cantidad de cuotas: </td>
+        <td>Cantidad de cuotas: </td>
        <td><select name="cuota">
        <option value="select"></option>
        <%
            int n=6;
            String usertype;
-       while(n<=60)
+       while(n<60)
        {
 
        usertype=Integer.toString(n);
@@ -111,7 +111,7 @@
                   </div>
 
                       <button class="btn btn-primary btn-sm" style="text-align: center; margin-bottom: 5px  "
-                                <a name="simular" type="submit" value="simular" style="text-align: center;color: white">simular<span class="glyphicon glyphicon-ok"></span>
+                                <a name="simular" type="submit" value="simular" style="text-align: center;color: white">Simular<span class="glyphicon glyphicon-ok"></span>
                             </a> </button></td>
                     
        </tr>
