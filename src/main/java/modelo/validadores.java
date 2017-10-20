@@ -11,7 +11,7 @@ package modelo;
  */
 public class validadores {
     
-    public void validadores(){
+    public validadores(){
     }
     
     public String quitaEspacios(String rut){
@@ -110,7 +110,7 @@ public class validadores {
         //montoAux = sacaComas(montoAux);
         if(verificarCaracteres(montoAux)==true){
             try{
-                if (Integer.parseInt(montoAux) >= 500000 && Integer.parseInt(montoAux) <= 100000000){
+                if (Integer.parseInt(montoAux) > 499999 && Integer.parseInt(montoAux) <= 100000000){
                     return montoAux;
                 }
                 else
