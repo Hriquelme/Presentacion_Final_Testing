@@ -128,6 +128,34 @@ public class validadoresTest {
         }
     }
 
+    @Test
+    public void testInvRut2() {
+ 
+       int cont=0;
+        String rut = "1-9"; //rut invalido
+            
+    
+        validadores instance = new validadores();
+ 
+      while (cont<2){
+          
+        if (instance.validadorRut(rut)==false){
+        
+            System.out.println("test de rut invalido: "+instance.validadorRut(rut));
+              rut = "15-2"; //rut invalido
+               cont++;
+        }else {
+           fail("The test case is a prototype.");
+        
+             }
+        
+        // TODO review the generated test code and remove the default call to fail.
+        }
+    }
+    
+    
+    
+    
     /**
      * se utilizara los casos limites del programa anterior.
      */
